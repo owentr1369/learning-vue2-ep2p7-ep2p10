@@ -9,6 +9,9 @@
       <span v-on:mouseover="handleMouseOver">Dung su kien</span>
       <!-- <span v-on:mouseover.stop="">Dung su kien</span> -->
     </div>
+    <div class="hello">
+      <input type="text" v-on:keyup.space.enter="handleKeyboard" />
+    </div>
   </div>
 </template>
 
@@ -32,6 +35,9 @@ export default {
     },
     handleMouseOver: function (event) {
       event.stopPropagation();
+    },
+    handleKeyboard: function () {
+      alert("Helloworld");
     },
   },
 };
