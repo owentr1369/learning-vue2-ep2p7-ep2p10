@@ -4,8 +4,10 @@
     <div id="obj">
       <h1>Bam nut de tang gia tri</h1>
       <h2>{{ dem }}</h2>
-      <button v-on:click="handleIncrease">Increase</button>
+      <button v-on:click="handleIncrease">Increase1</button>
+      <button v-on:click="dem++">Increase2</button>
       <p>Toa do cua chuot: {{ x }} : {{ y }}</p>
+      <p>Gia tri: {{ dem > 20 ? "qua 20 r" : "chua qua 20" }}</p>
       <span v-on:mouseover="handleMouseOver">Dung su kien</span>
       <!-- <span v-on:mouseover.stop="">Dung su kien</span> -->
     </div>
